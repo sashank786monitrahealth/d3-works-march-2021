@@ -26,10 +26,11 @@
     A = elliptical Arc
     Z = closepath
     -->
-        <path d='M130,0 C30,90 25,10 50,10'></path>
+        <path d='M130,0 C30,90 25,10 50,10 Z'></path>
         <!--
           M130,0              - first point will be 130,0
           C30,90 25,10 50,10  - curve will be drawn using these three set of points
+          Z - closes the path by connecting lastpoint to the firstpoint
         -->
     </svg>
 </body>
