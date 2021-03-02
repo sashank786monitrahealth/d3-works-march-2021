@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Path</title>
+    <style>
+    </style>
+</head>
+<body>
+    <svg height=300 width=150 style='background:crimson;'>
+    <!--
+    M = moveto
+    L = lineto
+    H = horizontal lineto
+    V = vertical lineto
+    C = curveto
+    S = smooth curveto
+    Q = quadratic bezier curve
+    T = smooth quadratic bezier curveto
+    A = elliptical Arc
+    Z = closepath
+    -->
+        <path d='M130,0 C30,90 25,10 50,10'></path>
+        <!--
+          M130,0              - first point will be 130,0
+          C30,90 25,10 50,10  - curve will be drawn using these three set of points
+        -->
+    </svg>
+</body>
+</html>
