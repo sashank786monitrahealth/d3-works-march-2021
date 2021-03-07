@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewport</title>
+    <style>
+     g {
+        fill:green;
+        stroke:yellow;
+        stroke-width:2px;
+        transform:rotate(-10deg) translate(30px,40px) skew(20deg) scale(2);
+        
+     }
+     
+     .rect2{
+         stroke:fuchsia;
+     }
+    </style>
+</head>
+<body>
+    <svg height=300 width=600 style='background:crimson;'>
+    <g>
+        <rect width=150 height=50 x=25 y=25> </rect>
+        <rect width=100 height=70 x=50 y=50 class="rect2"> </rect>
+        </g>
+    </svg>
+</body>
+</html>
