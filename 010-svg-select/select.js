@@ -33,8 +33,13 @@ console.log(secondRect);
 firstRect = secondSvg.select('rect');
 console.log(firstRect);
 
+secondSvg.select(function(d,i,n){
+
    console.log(d);
    console.log(i);
    console.log(n);
-})
+   console.log(n[i]);
+   console.log(this);
+   
+});
 
