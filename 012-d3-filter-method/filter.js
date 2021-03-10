@@ -23,4 +23,5 @@ allCircles.filter(function(d,i,n){
   console.log(n);
   console.log(n[i]);
   console.log(this);
+  this.style.fill = "dodgerblue";
 })
