@@ -23,5 +23,6 @@ allCircles.filter(function(d,i,n){
   console.log(n);
   console.log(n[i]);
   console.log(this);
-  this.style.fill = "dodgerblue";
+  //this.style.fill = "dodgerblue";
+  i%2==0?this.style.fill="green":this.style.fill="dodgerblue";
 })
