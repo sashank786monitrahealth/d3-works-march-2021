@@ -61,3 +61,9 @@ console.log(allCSvg1Even);
 let allCirclesOddEven = allCSvg1Odd.merge(allCSvg1Even);
 console.log(allCirclesOddEven);
 
+
+let allCSvg = allCSvg1.merge(allCSvg2);
+console.log(allCSvg);
+
+
+
