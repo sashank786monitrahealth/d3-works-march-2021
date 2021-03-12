@@ -142,3 +142,10 @@ console.log(allCSvg2Even);
 /*##############################################
 ### END: SVG2
 ##############################################*/
+
+
+let Svg1MSvg2 = allCSvg1Even.merge(allCSvg2Odd);
+console.log(Svg1MSvg2);
+
+let Svg2MSvg1 = allCSvg2Even.merge(allCSvg1Odd);
+console.log(Svg2MSvg1);
