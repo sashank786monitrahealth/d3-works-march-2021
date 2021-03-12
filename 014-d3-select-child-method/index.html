@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Merge</title>
+    <style>
+
+
+h1 {
+  color:teal;
+}
+    </style>
+   
+</head>
+<body>
+  <h1>Merge</h1>
+  
+  <!--
+  Note: We have to call Filter on the selection object. We cannot call Filter on d3 object.
+  -->
+  
+<svg id="svg1" class ="circleArea" width=300 height=300 style="background:pink">
+<circle r="100" cx="150" cy="150" class="odd"></circle>
+<circle r="10" cx="250" cy="250" class="even"></circle>
+</svg>
+
+<svg id="svg2" class ="rectArea" width=300 height=300 style="background:lightgreen">
+<rect width=200 height=200 x=50 y=50 class="odd"></rect>
+<rect width=20 height=20 x=260 y=260 class="even"></rect>
+</svg>
+  
+     <script src="/d3_min_lib/d3.v6.min.js"></script>
+     <script src="selectChild.js"></script>
+</body>
+</html>
