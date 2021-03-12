@@ -115,7 +115,7 @@ let allCSvg2Even = allCSvg2.select(function(d,i,n){
     } else {
     
            //console.log(this);
-       this.style.fill = 'emeraldgreen';
+       this.style.fill = '#046307'; // emerald green
        return this;
     
 
