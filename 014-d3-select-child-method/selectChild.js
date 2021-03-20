@@ -10,3 +10,8 @@ console.log(secondCircle);
 
 let firstRect = d3.select("svg:nth-of-type(2)").selectChild();
 console.log(firstRect);
+
+
+let secondRect = d3.select("svg:nth-of-type(2)").selectChild(":nth-of-type(2)");
+console.log(secondRect);
+
