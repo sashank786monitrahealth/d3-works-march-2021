@@ -1,39 +1,28 @@
-let firstCircle = d3.select("svg")
-                    .selectChild();
-                    
-console.log(firstCircle);
+let firstSVG = d3.select("svg")
+                 .selectChildren();
 
-let secondCircle = d3.select("svg")
-                     .selectChild(":nth-child(2)");
+console.log(firstSVG);
 
-console.log(secondCircle);
+// select the children from the second svg
 
-let firstRect = d3.select("svg:nth-of-type(2)").selectChild();
-console.log(firstRect);
+let secondSVG = d3.select("svg:nth-of-type(2)")
+                  .selectChildren();
+console.log(secondSVG);
 
+let allSvg = d3.selectAll("svg").selectChildren();
+console.log(allSvg);
 
-let secondRect = d3.select("svg:nth-of-type(2)").selectChild(":nth-of-type(2)");
-console.log(secondRect);
-
-
-let firstChild = d3.selectAll("svg").selectChild();
-console.log(firstChild);
-
-let secondChild = d3.selectAll("svg").selectChild(":nth-of-type(2)");
-console.log(secondChild);
-
-
-d3.select("svg").selectChild(function(c,i,cn){
-   console.log(c);
-   console.log(i);
-   console.log(cn);
+d3.select("svg").selectChildren(function(c,i,cn){
+   console.log("c = ",c);
+   console.log("i = ",i);
+   console.log("cn = ",cn);
 });
 
 
-d3.selectAll("svg").selectChild(function(c,i,cn){
-   console.log(c);
-   console.log(i);
-   console.log(cn);
-})
 
+d3.select("svg:nth-of-type(2)").selectChildren(function(c,i,cn){
+   console.log("c = ",c);
+   console.log("i = ",i);
+   console.log("cn = ",cn);
+});
 
