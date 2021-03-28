@@ -1,0 +1,36 @@
+*{
+   font-family: 'Inter';
+  
+ }
+ 
+#title, .buttons, .circles, .squares, .rects, #output{
+   display:flex;
+   justify-content: space-evenly;
+}
+
+svg {
+      padding-top:20px;
+}
+
+.circle, .square, .rectangle{
+
+   fill: rgb(248,248,248);
+}
+
+button{
+   border-color: gray;
+   border-style: solid;
+   color : gray;
+   font-size: 22px;
+   padding: 10px 30px;
+   border-radius: 10px;
+   margin: 10px;
+   cursor: pointer;
+   text-align: center;
+   background-color:yellow;
+} 
+
+
+button:focus{
+    outline:none
+}
