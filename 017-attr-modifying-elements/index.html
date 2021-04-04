@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr Selection</title>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <style>
+
+h1 {
+  color:teal;
+}
+    </style>
+   
+    <link rel="stylesheet" href="selection_attr.css"></link>
+</head>
+<body>
+  <div id="title">
+      <h1>Attr Selection</h1>
+  </div>
+
+  <svg width=300 height=100>
+     <circle cx="50" cy="50" r="10">  </circle>
+     <circle cx="150" cy="50" r="20">  </circle>
+     <circle cx="250" cy="50" r="30">  </circle>
+  </svg>
+
+  <svg width=300 height=100>
+     <circle cx="50" cy="50" r="30">  </circle>
+     <circle cx="150" cy="50" r="20">  </circle>
+     <circle cx="250" cy="50" r="10">  </circle>
+  </svg>
+ 
+     <script src="/d3_min_lib/d3.v6.min.js"></script>
+     <script src="selection_attr.js"></script>
+</body>
+</html>
