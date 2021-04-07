@@ -40,4 +40,16 @@ genderInputs.property('value',function(d,i){
 
 const nomention = d3.select('#nomention');
 nomention.property('checked','true');
+
+
+document.querySelector('#formsubmit')
+.addEventListener('submit', e => {
+                     e.preventDefault();
+                     console.log(d3.select('#fname').property('value'));
+                     console.log(d3.select('#lname').property('value'));
+                     console.log(d3.select('#male').property('checked'));
+                     console.log(d3.select('#female').property('checked'));
+                     console.log(d3.select('#nomention').property('checked'));
+                     );
+});
   
