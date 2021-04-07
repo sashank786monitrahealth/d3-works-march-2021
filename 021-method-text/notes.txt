@@ -1,0 +1,9 @@
+Coloring Elements:
+
+Four buttons:
+* select
+* selectAll
+* filter-odd
+* filter-even
+
+
