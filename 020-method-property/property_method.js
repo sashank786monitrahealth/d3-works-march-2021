@@ -23,3 +23,21 @@ d3.select('#lname')
   
 console.log(d3.select('#fname').property('type'));
   
+d3.select('#submit')
+  .property('type','submit')
+  .property('value','Submit');
+  
+const genderInputs = d3.selectAll('div input')
+genderInputs.property("type",'checkbox');
+
+
+
+
+const genderValues = ["male","female","nomention"];
+genderInputs.property('value',function(d,i){
+   return genderValues[i];
+});
+
+const nomention = d3.select('#nomention');
+nomention.property('checked','true');
+  
