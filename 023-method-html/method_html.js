@@ -11,7 +11,9 @@ let h1 = d3.select('h1')
    console.log(h1);
    
  
- d3.select('h1')
+ h1 = d3.select('h1')
            .html("HTML");
    console.log(h1);
    
+div = d3.select("div")
+        .html("<h3>This is from D3</h3>")
