@@ -50,6 +50,6 @@ document.querySelector('#formsubmit')
                      console.log(d3.select('#male').property('checked'));
                      console.log(d3.select('#female').property('checked'));
                      console.log(d3.select('#nomention').property('checked'));
-                     );
+                     
 });
   
