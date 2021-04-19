@@ -28,12 +28,16 @@ d3.selectAll('circle')
   console.log(d3.selectAll('circle'));
   
   
-  d3.selectAll('circle')
+let sortedCircles =   d3.selectAll('circle')
   .datum(function(){
      return parseInt(d3.select(this).attr('r'))	;
   })
   .sort((a,b) => b-a)  // descending
-  .sort((a,b) => a-b); // ascending
+  .sort((a,b) => a-b)
+  .attr("cx",function(d,i){
+     console.log("d = ",d);
+     return i*50;
+  }); // ascending
   
   
   
