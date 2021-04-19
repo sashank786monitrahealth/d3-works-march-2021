@@ -1,12 +1,5 @@
-//selection.remove(type,before)
+//selection.clone(deep)
 
-let circle = d3.select("circle");
-console.log(circle);
-
-let circleRemoved = circle.remove();
-console.log(circleRemoved);
-
-let rect = d3.select("rect");
-console.log(rect)       ;
-let rectRemoved = rect.remove();
-console.log(rectRemoved);
+let svg = d3.select('svg');
+let svgClone = svg.clone();
+console.log(svgClone);
