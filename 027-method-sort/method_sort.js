@@ -19,3 +19,22 @@ d3.selectAll('p')
   })
   .sort((a,b) => b-a)  // descending
   .sort((a,b) => a-b); // ascending
+  
+d3.selectAll('circle')
+  .datum(function(){
+     return d3.select(this).attr('r');
+  });
+  
+  console.log(d3.selectAll('circle'));
+  
+  
+  d3.selectAll('circle')
+  .datum(function(){
+     return parseInt(d3.select(this).attr('r'))	;
+  })
+  .sort((a,b) => b-a)  // descending
+  .sort((a,b) => a-b); // ascending
+  
+  
+  
+  
